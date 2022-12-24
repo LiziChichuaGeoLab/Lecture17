@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		D389CBB72956E00F00587376 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D389CBB62956E00F00587376 /* AppDelegate.swift */; };
 		D389CBB92956E00F00587376 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D389CBB82956E00F00587376 /* SceneDelegate.swift */; };
-		D389CBBB2956E00F00587376 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D389CBBA2956E00F00587376 /* ViewController.swift */; };
-		D389CBBE2956E00F00587376 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D389CBBC2956E00F00587376 /* Main.storyboard */; };
+		D389CBBB2956E00F00587376 /* CocktailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D389CBBA2956E00F00587376 /* CocktailsViewController.swift */; };
+		D389CBBE2956E00F00587376 /* Cocktails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D389CBBC2956E00F00587376 /* Cocktails.storyboard */; };
 		D389CBC02956E01100587376 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D389CBBF2956E01100587376 /* Assets.xcassets */; };
 		D389CBC32956E01100587376 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D389CBC12956E01100587376 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -19,8 +19,8 @@
 		D389CBB32956E00F00587376 /* Lecture17.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lecture17.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D389CBB62956E00F00587376 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D389CBB82956E00F00587376 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D389CBBA2956E00F00587376 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D389CBBD2956E00F00587376 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D389CBBA2956E00F00587376 /* CocktailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailsViewController.swift; sourceTree = "<group>"; };
+		D389CBBD2956E00F00587376 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Cocktails.storyboard; sourceTree = "<group>"; };
 		D389CBBF2956E01100587376 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D389CBC22956E01100587376 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D389CBC42956E01100587376 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,15 +56,63 @@
 		D389CBB52956E00F00587376 /* Lecture17 */ = {
 			isa = PBXGroup;
 			children = (
-				D389CBB62956E00F00587376 /* AppDelegate.swift */,
-				D389CBB82956E00F00587376 /* SceneDelegate.swift */,
-				D389CBBA2956E00F00587376 /* ViewController.swift */,
-				D389CBBC2956E00F00587376 /* Main.storyboard */,
-				D389CBBF2956E01100587376 /* Assets.xcassets */,
-				D389CBC12956E01100587376 /* LaunchScreen.storyboard */,
-				D389CBC42956E01100587376 /* Info.plist */,
+				D389CBCA2956E11A00587376 /* App */,
+				D389CBCD2956E14800587376 /* Scenes */,
+				D389CBCB2956E12C00587376 /* Resources */,
+				D389CBCC2956E13300587376 /* SupportingFiles */,
 			);
 			path = Lecture17;
+			sourceTree = "<group>";
+		};
+		D389CBCA2956E11A00587376 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D389CBB62956E00F00587376 /* AppDelegate.swift */,
+				D389CBB82956E00F00587376 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D389CBCB2956E12C00587376 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D389CBBF2956E01100587376 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D389CBCC2956E13300587376 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D389CBC42956E01100587376 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		D389CBCD2956E14800587376 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				D389CBCE2956E14D00587376 /* Launch */,
+				D389CBCF2956E15600587376 /* Cocktails */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		D389CBCE2956E14D00587376 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				D389CBC12956E01100587376 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		D389CBCF2956E15600587376 /* Cocktails */ = {
+			isa = PBXGroup;
+			children = (
+				D389CBBA2956E00F00587376 /* CocktailsViewController.swift */,
+				D389CBBC2956E00F00587376 /* Cocktails.storyboard */,
+			);
+			path = Cocktails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +175,7 @@
 			files = (
 				D389CBC32956E01100587376 /* LaunchScreen.storyboard in Resources */,
 				D389CBC02956E01100587376 /* Assets.xcassets in Resources */,
-				D389CBBE2956E00F00587376 /* Main.storyboard in Resources */,
+				D389CBBE2956E00F00587376 /* Cocktails.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +186,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D389CBBB2956E00F00587376 /* ViewController.swift in Sources */,
+				D389CBBB2956E00F00587376 /* CocktailsViewController.swift in Sources */,
 				D389CBB72956E00F00587376 /* AppDelegate.swift in Sources */,
 				D389CBB92956E00F00587376 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,12 +195,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D389CBBC2956E00F00587376 /* Main.storyboard */ = {
+		D389CBBC2956E00F00587376 /* Cocktails.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				D389CBBD2956E00F00587376 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Cocktails.storyboard;
 			sourceTree = "<group>";
 		};
 		D389CBC12956E01100587376 /* LaunchScreen.storyboard */ = {
@@ -288,10 +336,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Lecture17/Info.plist;
+				INFOPLIST_FILE = Lecture17/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Cocktails;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -315,10 +363,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Lecture17/Info.plist;
+				INFOPLIST_FILE = Lecture17/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Cocktails;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
