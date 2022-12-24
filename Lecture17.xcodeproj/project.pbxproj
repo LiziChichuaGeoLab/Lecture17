@@ -13,6 +13,8 @@
 		D389CBBE2956E00F00587376 /* Cocktails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D389CBBC2956E00F00587376 /* Cocktails.storyboard */; };
 		D389CBC02956E01100587376 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D389CBBF2956E01100587376 /* Assets.xcassets */; };
 		D389CBC32956E01100587376 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D389CBC12956E01100587376 /* LaunchScreen.storyboard */; };
+		D389CBD22956E2F900587376 /* Drink.swift in Sources */ = {isa = PBXBuildFile; fileRef = D389CBD12956E2F900587376 /* Drink.swift */; };
+		D389CBD52956E57200587376 /* DrinksAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D389CBD42956E57200587376 /* DrinksAPIManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		D389CBBF2956E01100587376 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D389CBC22956E01100587376 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D389CBC42956E01100587376 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D389CBD12956E2F900587376 /* Drink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drink.swift; sourceTree = "<group>"; };
+		D389CBD42956E57200587376 /* DrinksAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksAPIManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,10 +113,28 @@
 		D389CBCF2956E15600587376 /* Cocktails */ = {
 			isa = PBXGroup;
 			children = (
+				D389CBD02956E2E700587376 /* Model */,
+				D389CBD32956E56000587376 /* APIManager */,
 				D389CBBA2956E00F00587376 /* CocktailsViewController.swift */,
 				D389CBBC2956E00F00587376 /* Cocktails.storyboard */,
 			);
 			path = Cocktails;
+			sourceTree = "<group>";
+		};
+		D389CBD02956E2E700587376 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D389CBD12956E2F900587376 /* Drink.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D389CBD32956E56000587376 /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				D389CBD42956E57200587376 /* DrinksAPIManager.swift */,
+			);
+			path = APIManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,7 +210,9 @@
 			files = (
 				D389CBBB2956E00F00587376 /* CocktailsViewController.swift in Sources */,
 				D389CBB72956E00F00587376 /* AppDelegate.swift in Sources */,
+				D389CBD52956E57200587376 /* DrinksAPIManager.swift in Sources */,
 				D389CBB92956E00F00587376 /* SceneDelegate.swift in Sources */,
+				D389CBD22956E2F900587376 /* Drink.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
